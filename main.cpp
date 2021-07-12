@@ -3,6 +3,17 @@
 using std::cout;
 using std::vector;
 
+
+void PrintBoard(vector<vector<int>> board) {
+	for(vector<int> row : board) {
+		for(int cell : row) {
+			cout << cell;
+		}
+		cout << "\n";
+	}
+	cout << "\n";
+}
+
 int main() {
 
 	vector<vector<int>> board {
@@ -13,26 +24,28 @@ int main() {
 		{0, 0, 0, 0, 1, 0}
 	};
 
-	cout << board.size() << " x " << board[0].size() << "\n";
+	// cout << board.size() << " x " << board[0].size() << "\n";
 
-	for(int i = 0; i < board[0].size(); i++) {
-		cout << board[0][i];
-	}
+	// for(int i = 0; i < board[0].size(); i++) {
+	// 	cout << board[0][i];
+	// }
 
-	cout << "\n";
+	// cout << "\n";
 
-	for(int i: board[0]) {
-		cout << i;
-	}
+	// for(int i: board[0]) {
+	// 	cout << i;
+	// }
 
-	cout << "\n" << "\n";
+	// cout << "\n" << "\n";
 
-	for(vector<int> row : board) {
-		for(int i : row) {
-			cout << i;
-		}
-		cout << "\n";
-	}
+	// for(vector<int> row : board) {
+	// 	for(int i : row) {
+	// 		cout << i;
+	// 	}
+	// 	cout << "\n";
+	// }
 
-	cout << "\n";
+	// cout << "\n";
+
+	PrintBoard(board);
 }
